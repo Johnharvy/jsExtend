@@ -1,3 +1,3 @@
 ## 生成文档
 
-    jsdoc ./src
+    npm run doc

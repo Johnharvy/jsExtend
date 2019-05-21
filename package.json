@@ -3,6 +3,7 @@
   "description": "javascript extend.",
   "version": "1.0.0",
   "author": "zhuxingyu <1667582186@qq.com>",
+  "main" : "./dist/jsExtend.js",
   "license": "MIT",
   "private": true,
   "scripts": {
