@@ -11,10 +11,12 @@
     *  @return {boolean} 
     */
    ArrayExtend.contains = (target) => {
-     return this.some(item => {
+      return this.some(item => {
           return item === target
-    })  
+      })  
+   }
    
- }
+
+
 
 export default ArrayExtend

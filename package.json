@@ -6,10 +6,12 @@
   "main" : "./dist/jsExtend.js",
   "license": "MIT",
   "private": true,
+  "repository" : "https://github.com/Johnharvy/JsExtend.git",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "desc": "npm run doc&&cross-env NODE_ENV=development webpack-dev-server --open-page '/out'",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
-    "doc" : "jsdoc ./src/*"
+    "doc" : "jsdoc ./src/*",
+    "dev" : "cross-env NODE_ENV=development webpack-dev-server --open -hot"
   },
   "dependencies": {
   },
