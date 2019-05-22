@@ -2,26 +2,20 @@ import  ArrayExtend  from  './Array/base.js' //数组
 import  ObjectExtend  from  './Object/base.js' //对象
 import  LocationExtend  from  './Location/base.js' //location对象
 
-/* 数组对象扩展 */
-if(Array && Array.prototype){
-   Object.assign(Array.prototype, ArrayExtend)
-}
 
-/* 原对象扩展 */
-if( Object && Object.prototype){
-    Object.assign(Object.prototype, ObjectExtend)
- }
-
- /* Location对象扩展 */
-if( Location && Location.prototype){
-   Object.assign(Location.prototype, LocationExtend)
-}
+/* 扩展配置进来,所有配置在这里按照固定格式配进来就好 */
+const MapConfigs = [
+   [Array,  ArrayExtend],
+   [Object, ObjectExtend],
+   [Location, LocationExtend]
+]
 
 /* 原生映射 */
-const  nativeObjectsMapExtend = {
-
-}
-      
+MapConfigs.map(native => {
+    if(typeof native[0] === 'function' && typeof native[1] === 'object'){
+      extendJsNative(native[0],native[1])
+    }
+})
 
 /**
  * @todo  扩展js的原生对象
@@ -33,6 +27,8 @@ function extendJsNative(nativeObject, objExtend){
       Object.assign(nativeObject.prototype, objExtend)
    }
 }
+
+
 
  
 
