@@ -3,16 +3,17 @@
   "description": "javascript extend.",
   "version": "0.1.1",
   "author": "zhuxingyu <1667582186@qq.com>",
-  "main" : "./dist/jsExtend.js",
+  "main": "./dist/jsExtend.js",
   "license": "MIT",
-  "repository" : "https://github.com/Johnharvy/JsExtend.git",
+  "repository": "https://github.com/Johnharvy/JsExtend.git",
   "scripts": {
     "desc": "npm run doc&&cross-env NODE_ENV=development webpack-dev-server --open-page '/out'",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
-    "doc" : "jsdoc ./src/*",
-    "dev" : "cross-env NODE_ENV=development webpack-dev-server --open -hot"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules&&gulp",
+    "doc": "jsdoc ./src/*",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open-page '/'"
   },
   "dependencies": {
+    "cross-env": "^5.2.0"
   },
   "browserslist": [
     "> 1%",
@@ -25,6 +26,7 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-stage-3": "^6.24.1",
     "file-loader": "^1.1.4",
+    "gulp": "^3.9.1",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1"
   }

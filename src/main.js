@@ -17,5 +17,22 @@ if( Location && Location.prototype){
    Object.assign(Location.prototype, LocationExtend)
 }
 
+/* 原生映射 */
+const  nativeObjectsMapExtend = {
+
+}
+      
+
+/**
+ * @todo  扩展js的原生对象
+ * @param {object} nativeObject  - 原生的对象
+ * @param {object} objExtend   - 扩展的对象
+ */
+function extendJsNative(nativeObject, objExtend){
+   if( nativeObject && nativeObject.prototype){
+      Object.assign(nativeObject.prototype, objExtend)
+   }
+}
+
  
 
