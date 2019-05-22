@@ -14,6 +14,9 @@ npm run build
 
 
 # to see Api
+npm run  desc
+
+# to Test
 npm run dev
 ```
 
