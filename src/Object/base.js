@@ -17,8 +17,17 @@ const  ObjectExtend =  {}
        }
        return false
     }
+
+    /**
+     *  @todo 检测目标值是否是对象类型
+     *  @name isObject
+     *  @param {Object} target - 目标数据
+     *  @return {boolean} 
+     */
+    ObjectExtend.isObject = (target) => {
+        if (Object.prototype.toString.call(target) === '[object Object]') return true
+        return false
+    }
     
-  
- 
  export default ObjectExtend
  

@@ -20,4 +20,5 @@ LocationExtend.getQueryParam = (target, url) => {
     return null;
 }
 
+
 export default LocationExtend
