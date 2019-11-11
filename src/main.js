@@ -5,9 +5,9 @@ import  LocationExtend  from  './Location/base.js' //location对象
 
 /* 扩展配置进来,所有配置在这里按照固定格式配进来就好 */
 const MapConfigs = [
-   [Array,  ArrayExtend],
-   [Object, ObjectExtend],
-   [Location, LocationExtend]
+   [Array,  ArrayExtend],  //数组
+   [Object, ObjectExtend], //object
+   [Location, LocationExtend] //浏览器环境的location对象
 ]
 
 /* 原生映射 */
